@@ -2,7 +2,6 @@ var do_wrapper = require('do-wrapper');
 var config = require('./config');
 
 var dig = new do_wrapper(config.api_key);
-var log = function (err, res, body) { console.log(err || body); };
 
 
 function get_snapshot_id (cb) {
